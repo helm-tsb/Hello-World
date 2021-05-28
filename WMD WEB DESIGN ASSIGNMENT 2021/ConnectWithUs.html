@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARIS,France</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Paris,FRANCE<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation" onclick="navigation();">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="ConnectWithUs.html">Connect With Us</a></li>
+            <li><a href="Thank You.html"></a></li>
+        </ul>
+    </header>
+    <section class="contact" id="contact">
+        <div class="title">
+            <h2 class="titleBox">Subscribe Now To Our NewsLetter For Weekly Updates!</h2>
+            <p></p>
+        </div>
+        <div class="contactForm">
+            <h3>Sign Up</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="Name">
+            </div>
+        <div class="inputBox">
+             <input type="text" placeholder="Lastname">
+            </div>
+        <div class="inputBox">
+             <input type="text" placeholder="Email">
+            </div>
+        <div class="inputBox">
+            <input type="text" placeholder="Country">
+            </div>
+        <div class="inputBox">
+            <input type="text" placeholder="Region">
+        </div>      
+       
+         <div class="title">
+            <a href="Thank You.html" class="btn">Subscribe</a>
+            </div>
+        </div> 
+    </section>
+   
+  
+    <script type="text/javascript">
+       window.addEventListener('scroll', function(){
+           const header = document.querySelector('header');
+           header.classList.toggle("sticky", window.scrollY > 0);
+       });
+
+       function toggleMenu(){
+      const menuToggle  = document.querySelector('.menuToggle');
+      const navigation = document.querySelector('.navigation')
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+  }
+  </script>
+</body>
+</html>

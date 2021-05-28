@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARIS,France</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Paris,FRANCE<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation" onclick="navigation();">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="ConnectWithUs.html">Connect With Us</a></li>
+        </ul>
+    </header>
+    <section class="lifestyle" id="lifestyle">
+        <div class="content" >
+            <h2>Fashion In Paris</h2>
+            <p>Paris is aiming to be the sustainable fashion capital of the world.The city of Paris has 
+                announced official plans to become the most sustainable fashion capital by 2024. The 
+                initiative, entitled 'Paris Good Fashion' will aim to push the fashion industry towards
+                 using more sustainable practices, WWD reports."When I started out 
+                in fashion 20 years ago, no one talked about sustainability," Lefort said. "But the world
+                has changed: we are in a situation of ecological disaster. This is a huge concern for the 
+                 younger generations, who are appealing to fashion brands to change their processes. We need
+                 to create a dialogue between those two worlds."</p>
+            <a href= "https://www.youtube.com/watch?v=iZncgJMF6Dg" class="btn">Learn More</a>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="row">
+        <div class="col50">
+            <h2> Luxury Lifestyle</h2>
+            <p>Paris is world famous for its unrivalled historical, cultural and architectural heritage. 
+                Paris is a unique city which attracts millions of visitors every year, as well as numerous
+                 expatriates who decide to make the city their home. With more than 136 museums, dozens of 
+                 exhibitions, countless shows and a multitude of theatres, Paris is buzzing with life, and 
+                 it is truly difficult to ever get bored in the city. Whether you are a history buff or an 
+                 arts aficionado, Paris holds something for you which you will find nowhere else in the world.<br><br>
+                 Paris has plenty of resturants and cafes for expats of all palates. As a culinary capital of 
+                 thw world Paris is famed for its gourmrnt eatries. The City's many patisseriesalso prove also
+                 prove that food as an art form is alive as well. The French are famous for their food, but 
+                 those expates who've had their fill of croissants and creme brulee won't struggle to find 
+                 restaurants offering international cuisinessuch as Chinese, Indian, Italian and Thai.<br><br>
+                 With a culture as a serious about its leisure time as the French, its no wonder that Paris has 
+                 plenty to offer for those looking to spend the day outdoors. The city's climate is highly seasonal
+                 though, so the outdoor activities available oftendepend on the time of the day. Paris is home to a 
+                 number of parks in which expats can enjoy leisurely strolls throughout the year. <b>Parc de la Villete</b>
+                 is a particular favourite, as throughout the summer months a large screen is put in front of which 
+                 anyone can relax and watch classic films. The selection usually includes English as well as French 
+                 cinema, and a screening can be a great place to enjoy picnic. While open-air movies are'nt available
+                 in Paris during the winter expats wanting to spend more time outdoors during frosty months, can instead
+                enjoynumerous ice skating rinks around the city.</p>
+        </div>
+        <div class="col50">
+            <div class="imgBx">
+                <img src="luxurylifestyle.jpg">
+            </div>
+        </div>
+    </section>
+
+    <section class="attraction" id="attraction">
+        <div class="title">
+            <h2 class="titleText">Tourist Attraction Sites</h2>
+            <p>Some of Tourist Attraction sites in Paris</p>
+        </div>
+        <div class="content">
+            <div class="box">
+                <div class="imgBx">
+                    <img src="eiffeltower.jpg">
+                </div>
+                <div class="text">
+                    <h3>The Eiffel Tower</h3>
+                </div>
+        <div class="box">
+            <div class="imgBx">
+                    <img src="louvremuseum.jpg">
+                </div>
+                <div class="text">
+                    <h3>Louvre Museum</h3>
+                </div>
+                <div class="box">
+        <div class="imgBx">
+            <img src="Musee d'Orsay.jpg">
+                </div>
+                <div class="text">
+                    <h3>Musee d'Orsay</h3>
+                </div>
+        <div class="box">
+            <div class="imgBx">
+                <img src="Cathédrale-Notre-Dame-de-Paris-Vue-depuis-le-parvis.jpg">
+                </div>
+                <div class="text">
+                     <h3>"Cathédrale-Notre-Dame-de-Paris</h3>
+                </div>
+        <div class="box">
+            <div class="imgBx">
+                <img src="ParisMontmatre.jpg">
+            </div>
+                <div class="text">
+                    <h3>Montrmatre Museum</h3>
+                </div>
+        <div class="box">
+             <div class="imgBx">
+                <img src="Place de la Concorde.jpg">
+            </div>
+            <div class="text">
+                <h3>Place de la Concorde</h3>
+            </div>
+         <div class="box">
+            <div class="imgBx">
+                <img src="Luxembourg Gardens.jpg">
+             </div>
+                <div class="text">
+                     <h3>Luxembourg Gardens</h3>
+                </div>
+            </div>
+        <div class="title">
+            <a href="#" class="btn">View All</a>
+        </div>
+    </section>
+  
+    <script type="text/javascript">
+       window.addEventListener('scroll', function(){
+           const header = document.querySelector('header');
+           header.classList.toggle("sticky", window.scrollY > 0);
+       });
+    
+       function toggleMenu(){
+      const menuToggle  = document.querySelector('.menuToggle');
+      const navigation = document.querySelector('.navigation')
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+  }
+  </script>
+</body>
+</html>

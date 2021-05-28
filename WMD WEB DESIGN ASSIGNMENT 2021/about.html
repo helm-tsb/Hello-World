@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARIS,France</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Paris,FRANCE<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation" onclick="navigation();">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="ConnectWithUs.html">Connect With Us</a></li>
+        </ul>
+    </header>
+    <section class="about" id="about">
+        <div class="row">
+        <div class="col50">
+            <h2>About</h2>
+            <p>Paris is located in northern France, bisected by the Seine River. The city motto is 
+                Fluctuat nec mergitur (‘[She] is tossed [by the waves], but does not sink’).
+                 Historically, it makes reference to the ship that appears on the coat of arms and more generally,
+                 to all the challenges the city has faced through its history.The colors of Paris are blue and red.
+                 These are the same colors as the French flag, but without the white (white refers to the French monarchy)
+                 Often nicknamed Ville Lumière (City of Light), it might refer to the city’s first gas lamps in the 19th 
+                 century. Another theory is related to the Age of Enlightenment in France More locally, Paris is also 
+                 nicknamed Paname about the Panama hats. This hat became very trendy in Paris at the beginning of the 20th
+                century, and all the Parisian men used to wear it. In Paris, when you hear or read about Paname, they are 
+                referring to Paris.Paris only has one sister city, and that’s Rome. Under the slogan, ‘Only Paris is worthy of Rome;
+                only Rome is worthy of Paris.’, Paris and Rome were exclusively twinned in 1956.<br><br>France is part of Europe. 
+                People living outside Europe like to divide the European continent into smaller geographical areas. Thus, Paris and 
+                France are located in Western Europe.With 19M+ arrivals, Paris was in 2019 the 6th most visited city globally
+                (according to CNN travel). It was the 1st most visited city in Europe, now that London is not in Europe anymore.
+                Paris is the most populated city in France. The population of Paris, France, is approximately 2.18 million inhabitants
+                (2020), and the Metropolitan City of Paris (Région Parisienne) 10.73 million (2020).Paris is divided into 20
+                 Arrondissements or Districts, each one with a different history, and soul. In the Paris Arrondissement Guide, you will
+                 find the 20 Districts of Paris explained. Then, if you want to learn more about a specific district of Paris, click 
+                  on our Paris by Arrondissement guides.</p>
+        
+        </div>
+        <div class="col50">
+            <div class="imgBx">
+                <img src="france.jpg">
+            </div>
+        </div>
+    </section>
+  
+    <script type="text/javascript">
+       window.addEventListener('scroll', function(){
+           const header = document.querySelector('header');
+           header.classList.toggle("sticky", window.scrollY > 0);
+       });
+
+       
+     function toggleMenu(){
+      const menuToggle  = document.querySelector('.menuToggle');
+      const navigation = document.querySelector('.navigation')
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+  }
+ </script>
+</body>
+</html>

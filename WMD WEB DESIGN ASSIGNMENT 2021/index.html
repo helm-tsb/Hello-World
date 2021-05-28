@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARIS,France</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Paris,FRANCE<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation" onclick="navigation();">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="ConnectWithUs.html">Connect With Us</a></li>  
+        </ul>
+        
+    </header>
+  <section class="banner" id="banner">
+      <div class="content">
+          <h2>The City Of Light</h2>
+          <p>If you count everything from churches to hotels, fountains and statues, monuments, and 
+              national buildings, there are more than 296 illuminated sites in the city. Of the 37 
+              major bridges, a whopping 33 is illuminated in outstanding magnificence every sunset.</p>
+          <a href= "https://youtu.be/AQ6GmpMu5L8" class="btn">Learn More</a>
+      </div>
+  </section>
+
+  <section class="about" id="about">
+      <div class="row">
+      <div class="col50">
+          <h2>Bonjor!</h2>
+          <p>We are ready to welcome you! The terraces of our cafés and restaurants, our museums, cinemas, 
+              theatres and shops reopen their doors. Prepare your next stay in Paris Region now discovering 
+              the list of places ready to welcome you!<br><br>
+            Mission<br><br>
+            Providing each of our clients with unforgettable experiences in Paris and France is our mission!</p>
+      
+      </div>
+      <div class="col50">
+          <div class="imgBx">
+              <img src="welcome.jpg">
+          </div>
+      </div>
+  </section>
+
+  <div class="copyrightText">
+      <p>Copyright 2021 <a href="#">Paris.FRANCE</a>. All Rights Reserved</p>
+  </div>
+
+  <script type="text/javascript">
+     window.addEventListener('scroll', function(){
+         const header = document.querySelector('header');
+         header.classList.toggle("sticky", window.scrollY > 0);
+     });
+  
+  function toggleMenu(){
+      const menuToggle  = document.querySelector('.menuToggle');
+      const navigation = document.querySelector('.navigation')
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+  }
+</script>
+</body>
+</html>

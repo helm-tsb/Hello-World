@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PARIS,France</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Paris,FRANCE<span>.</span></a>
+        <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navigation" onclick="navigation();">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="lifestyle.html">Lifestyle</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="ConnectWithUs.html">Connect With Us</a></li>
+        </ul>
+    </header>
+    <section class="about" id="about">
+        <div class="row">
+        <div class="col50">
+            <h2>Events</h2>
+            <p>ETE DU TRAVAIL – LABOR DAY
+                May 1, 2021
+                French National Holiday
+                WWII VICTORY DAY CEREMONY
+                The president of France will lay flowers on the Tomb of the Unknown Soldier to honor the liberation of France.
+                Arc de Triomphe
+                May 8, 2021
+                French National Holiday
+                FRENCH OPEN TENNIS CHAMPIONSHIP
+                It's the only red clay court Grand Slam tournament.
+                Roland-Garros
+                May to June 2021
+                → Our Guide to the French Open…
+                TASTE OF PARIS
+                This popular event brings together restaurants, food & wine producers with a line-up of cooking demonstrations by top chefs.
+                May 2021
+                Grand Palais
+                → Information…
+                JAZZ FESTIVAL À SAINT-GERMAIN-DES-PRÉS
+                Top jazz performances in the heart of Paris. Doesn't get much better than this!
+                May 2021
+                → Information…
+                NUIT DES MUSÉES
+                Just another event that makes Paris great! Free museum entrance, plus they stay open until the wee hours.
+                May 2021
+                → Information…
+                FÊTE DU PAIN
+                A festival of bread where the best baguette of the year is announced.
+                May 2021
+                → Information…
+                MORE MAY EVENTS
+                THE TOP THINGS TO DO IN PARIS IN MAY
+                June – Juin
+                WHIT SUNDAY & WHIT MONDAY – FRENCH NATIONAL HOLIDAY
+                Fifty days after Easter Sunday
+                MAKEUP IN PARIS
+                It's a festival of cosmetics attended by trend setters, manufacturers and lovers of makeup.
+                Carrousel du Louvre
+                → Information…
+                PARIS JAZZ FESTIVAL
+                A magical international jazz event in the beautiful gardens of Parc Floral. Normally held during in early summer, this year moved to August.
+                Parc Floral de Vincennes
+                → Information…
+                FETE DE LA MUSIQUE
+                Free music concerts take to the streets and parks of Paris to celebrate the summer solstice.<br><br>                June 21, 2021
+                → Information…
+                SALON INTERNATIONAL DE LA MAISON DE POUPÉE
+                That's right, it's the International Dollhouse Show, attracting vintage dolls house collectors from around the globe.
+                Internationale Universitaire de Paris
+                → Information…
+                FÊTE DES TUILERIES – PARIS FUNFAIR
+                It's like the fairgrounds of your childhood – trampolines, bumper cars & cotton candy.
+                Late June to August, 2021
+                Tuileries Gardens & Place de la Concorde
+                → Information…
+                FESTIVAL CHOPIN
+                There's a special connection between Paris and Frederic Chopin. Although he wasn't born here, he is buried in Père Lachaise cemetery. Head to the Orangerie in Parc de Bagatelle for your fix of classical piano music.
+                June to August, 2021
+                → Information…
+                LA MARCHE DES FIERTÉS DE PARIS – LGBT PRIDE Check the calendar for exact times and the parade route
+                Rue des Archives, 4th Arrondissement</p>
+        
+        </div>
+        <div class="col50">
+            <div class="imgBx">
+                <img src="events.jpg">
+            </div>
+        </div>
+    </section>
+  
+    <script type="text/javascript">
+       window.addEventListener('scroll', function(){
+           const header = document.querySelector('header');
+           header.classList.toggle("sticky", window.scrollY > 0);
+       });
+
+       function toggleMenu(){
+      const menuToggle  = document.querySelector('.menuToggle');
+      const navigation = document.querySelector('.navigation')
+      menuToggle.classList.toggle('active');
+      navigation.classList.toggle('active');
+  }
+  </script>
+</body>
+</html>
